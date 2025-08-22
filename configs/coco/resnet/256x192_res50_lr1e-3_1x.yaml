@@ -22,6 +22,7 @@ DATASET:
     DET_FILE: './exp/json/test_det_yolo.json'
     ANN: 'annotations/person_keypoints_val2017.json'
 DATA_PRESET:
+  joint_pairs: 17
   TYPE: 'simple'
   SIGMA: 2
   NUM_JOINTS: 17

@@ -54,6 +54,7 @@ class Tracker(BaseDetector):
         self.model = Darknet(self.model_cfg, self.img_size, nID=14455)
         # load_darknet_weights(self.model, args.weights)
         self.model.load_state_dict(torch.load(self.model_weights, map_location='cpu')['model'], strict=False)
+        print('Model loaded')
         self.emb_dim = self.model.emb_dim
 
         if self.tracker_opt:
@@ -213,6 +214,12 @@ class Tracker(BaseDetector):
             self.tracked_stracks, self.lost_stracks = remove_duplicate_stracks(self.tracked_stracks, self.lost_stracks)
 
             if self.tracker_opt.debug:
+                print('debugging')
+                print('===========Frame {}=========='.format(self.frame_id))
+                print('Activated: {}'.format([track.track_id for track in activated_starcks]))
+                print('Refind: {}'.format([track.track_id for track in refind_stracks]))
+                print('Lost: {}'.format([track.track_id for track in lost_stracks]))
+                print('Removed: {}'.format([track.track_id for track in removed_stracks]))               
                 logger.debug('===========Frame {}=========='.format(self.frame_id))
                 logger.debug('Activated: {}'.format([track.track_id for track in activated_starcks]))
                 logger.debug('Refind: {}'.format([track.track_id for track in refind_stracks]))
