@@ -4,11 +4,11 @@
 {
     "distutils": {
         "depends": [
-            "/home/eeyifanshen/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/home/eeyifanshen/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/arrayscalars.h",
-            "/home/eeyifanshen/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/ndarrayobject.h",
-            "/home/eeyifanshen/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/ndarraytypes.h",
-            "/home/eeyifanshen/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/home/yifan/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/home/yifan/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/arrayscalars.h",
+            "/home/yifan/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/ndarrayobject.h",
+            "/home/yifan/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/ndarraytypes.h",
+            "/home/yifan/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include/numpy/ufuncobject.h"
         ],
         "extra_compile_args": {
             "cxx": [
@@ -17,7 +17,7 @@
             ]
         },
         "include_dirs": [
-            "/home/eeyifanshen/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include"
+            "/home/yifan/miniconda3/envs/visual2/lib/python3.9/site-packages/numpy/core/include"
         ],
         "language": "c++",
         "name": "detector.nms.soft_nms_cpu",
